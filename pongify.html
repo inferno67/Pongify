@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pongify</title>
+    <link rel="stylesheet" href="pongify.css">
+</head>
+<body>
+    <div id="menu" class="menu-screen">
+        <h1 class="title">PONGIFY</h1>
+        <div class="mode-select">
+            <button class="mode-btn" data-mode="easy">Easy</button>
+            <button class="mode-btn" data-mode="medium">Medium</button>
+            <button class="mode-btn" data-mode="hard">Hard</button>
+        </div>
+        <div class="menu-extra">
+            <p>Move your paddle with your mouse. First to 10 wins!</p>
+            <div class="social-buttons">
+                <a href="https://github.com/inferno67" target="_blank" class="github-btn">
+                    <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/github.svg" alt="GitHub" class="github-icon">
+                    GitHub
+                </a>
+                <a href="https://discord.gg/SqyFzxZdjH" target="_blank" class="discord-btn">
+                    <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/discord.svg" alt="Discord" class="discord-icon">
+                    Discord
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="gameArea" class="game-area" style="display:none;">
+        <div class="top-bar">
+            <button id="backBtn">⟵ Menu</button>
+            <span id="difficultyLabel"></span>
+        </div>
+        <canvas id="pong" width="800" height="500"></canvas>
+        <div class="controls">
+            <button id="restartBtn">Restart Game</button>
+        </div>
+    </div>
+    <script src="pongify.js"></script>
+</body>
+</html>
